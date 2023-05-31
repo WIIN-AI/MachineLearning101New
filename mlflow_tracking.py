@@ -12,8 +12,8 @@ if __name__ == "__main__":
     log_metric("foo", random() + 2)
 
     # Log an artifact (output file)
-    if not os.path.exists("outputs"):
-        os.makedirs("outputs")
-    with open("outputs/test.txt", "w") as f:
+    if not os.path.exists("../pythonProject/MLProject/outputs"):
+        os.makedirs("../pythonProject/MLProject/outputs")
+    with open("../pythonProject/MLProject/outputs/test.txt", "w") as f:
         f.write("hello world!")
     log_artifacts("outputs")
